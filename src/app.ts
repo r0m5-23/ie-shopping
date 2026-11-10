@@ -304,7 +304,7 @@ export class CadViewerApp {
       )
 
       const success = await docManager.openDocument(
-        'project.dxf',
+        'shopping_3al.dxf',
         fileContent,
         options
       )
