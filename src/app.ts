@@ -9,7 +9,6 @@ import {
   preloadViewerAppModules,
   scheduleViewerPreload
 } from './viewerLoader'
-import { WEBWORKER_FILE_URLS } from './workerConfig'
 
 /**
  * Toast notification severity used by {@link CadViewerApp.showMessage}.
@@ -217,8 +216,6 @@ export class CadViewerApp {
         busyIndicatorHost: this.viewerPane,
         autoResize: true,
         baseUrl: 'https://cdn.jsdelivr.net/gh/mlightcad/cad-data@main/',
-        webworkerFileUrls: WEBWORKER_FILE_URLS,
-        checkWorkersOnInit: false,
         useMainThreadDraw,
         disableExport
       })
@@ -277,13 +274,6 @@ export class CadViewerApp {
 
     try {
       const docManager = this.requireDocManager().instance
-      if (!(await docManager.areWorkersReady())) {
-        this.showMessage(
-          'CAD worker scripts are not reachable. Check deployment of assets/*-worker.js.',
-          'error'
-        )
-        return
-      }
 
       const response = await fetch('./shopping_3al.dxf')
 
