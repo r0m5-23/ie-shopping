@@ -1,8 +1,13 @@
 {
-  "name": "cad-viewer",
-  "version": "0.0.1",
+  "name": "ie-shopping-cad-viewer",
+  "version": "0.1.0",
   "license": "MIT",
+  "private": true,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/https://r0m5-23.github.io/ie-shopping.git"
+  },
   "scripts": {
     "build": "tsc && vite build",
     "analyze": "tsc && vite build --mode analyze",
