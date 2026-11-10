@@ -1,7 +1,7 @@
 import { defineConfig, type PluginOption } from 'vite'
 
 export default defineConfig(({ mode }) => ({
-  base: './',
+  base: '/ie-shopping/',
   build: {
     modulePreload: false,
   }
