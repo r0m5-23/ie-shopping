@@ -1,6 +1,7 @@
-# [ie-shopping](https://r0m5-23.github.io/ie-shopping/) 
+# [github.io/ie-shopping](https://r0m5-23.github.io/ie-shopping/) 
 Projeto de Instalação Elétrica de um Shopping
 
+![shopping-project_page-0001](./img/shopping-project_page-0001.jpg)
 
 ## Credits
 
